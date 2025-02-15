@@ -5,7 +5,8 @@ let players = [
     { id: 3, name: "imtrapped", score: 2800 },
     { id: 4, name: "theyhaventgiven", score: 2500 },
     { id: 5, name: "mefood", score: 2100 },
-    { id: 6, name: "fordays", score: 1900 }
+    { id: 6, name: "fordays", score: 1900 },
+    { id: 7, name: "ram", score: 1 }
 ];
 
 // Track the next ID to assign
