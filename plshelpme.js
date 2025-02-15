@@ -1,12 +1,12 @@
 // Initialize player data
 let players = [
-    { id: 1, name: "Ana", score: 8000000000 },
-    { id: 2, name: "Kaylin", score: 8000000 },
+    { id: 1, name: "Cameron", score: 800000000000000000000000000000000000000000000 },
+    { id: 2, name: "Ram", score: 8000000 },
     { id: 3, name: "Cameron", score: 6000000 },
     { id: 4, name: "theyhaventgiven", score: 2500 },
     { id: 5, name: "mefood", score: 2100 },
     { id: 6, name: "fordays", score: 1900 },
-    { id: 7, name: "ram", score: 1 }
+    { id: 7, name: "ana", score: 1 }
 ];
 
 // Track the next ID to assign
