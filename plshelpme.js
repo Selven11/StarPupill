@@ -1,6 +1,6 @@
 // Initialize player data
 let players = [
-    { id: 1, name: "helpme", score: 3200 },
+    { id: 1, name: "Cameron", score: 8000000 },
     { id: 2, name: "imtrapped", score: 2800 },
     { id: 3, name: "theyhaventgiven", score: 2500 },
     { id: 4, name: "mefood", score: 2100 },
