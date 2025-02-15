@@ -1,3 +1,168 @@
-/*hi*/
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 
-/*hello*/
+:root {
+    --cyber-blue: #00b4d8;
+    --cyber-dark: #0d1b2a;
+    --cyber-light: #90e0ef;
+    --cyber-accent: #00ff9f;
+    --cyber-danger: #ff0055;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+    background-color: var(--cyber-dark);
+    color: var(--cyber-light);
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.title {
+    text-align: center;
+    color: var(--cyber-accent);
+    margin-bottom: 30px;
+    text-shadow: 0 0 10px var(--cyber-accent);
+    font-size: 2.5rem;
+}
+
+.leaderboard {
+    background-color: rgba(0, 180, 216, 0.1);
+    border: 2px solid var(--cyber-blue);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.5);
+}
+
+.header, .player-row {
+    display: grid;
+    grid-template-columns: 0.5fr 3fr 1fr 2fr;
+    padding: 10px;
+    align-items: center;
+}
+
+.header {
+    border-bottom: 1px solid var(--cyber-blue);
+    font-weight: bold;
+    color: var(--cyber-blue);
+}
+
+.player-row {
+    border-bottom: 1px solid rgba(0, 180, 216, 0.3);
+    transition: all 0.3s ease;
+}
+
+.player-row:hover {
+    background-color: rgba(0, 180, 216, 0.2);
+}
+
+.rank {
+    text-align: center;
+}
+
+.player {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.score {
+    text-align: center;
+    font-weight: bold;
+    color: var(--cyber-accent);
+}
+
+.actions {
+    display: flex;
+    justify-content: space-around;
+}
+
+button {
+    background-color: transparent;
+    border: 1px solid var(--cyber-blue);
+    color: var(--cyber-light);
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+button:hover {
+    background-color: var(--cyber-blue);
+    color: var(--cyber-dark);
+}
+
+.add-player {
+    margin-top: 30px;
+    background-color: rgba(0, 180, 216, 0.1);
+    border: 2px solid var(--cyber-blue);
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+}
+
+.add-player h2 {
+    margin-bottom: 15px;
+    color: var(--cyber-accent);
+}
+
+input {
+    background-color: rgba(0, 180, 216, 0.2);
+    border: 1px solid var(--cyber-blue);
+    color: var(--cyber-light);
+    padding: 8px;
+    margin: 5px;
+    border-radius: 3px;
+    font-size: 1rem;
+}
+
+input::placeholder {
+    color: rgba(144, 224, 239, 0.5);
+}
+
+#add-player-btn {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: var(--cyber-accent);
+    color: var(--cyber-dark);
+    border: none;
+}
+
+#add-player-btn:hover {
+    background-color: rgba(0, 255, 159, 0.8);
+}
+
+.increase {
+    border-color: var(--cyber-accent);
+}
+
+.increase:hover {
+    background-color: var(--cyber-accent);
+}
+
+.decrease {
+    border-color: var(--cyber-danger);
+}
+
+.decrease:hover {
+    background-color: var(--cyber-danger);
+}
+
+/* Animation for when positions change */
+@keyframes highlight {
+    0% { background-color: rgba(0, 255, 159, 0.5); }
+    100% { background-color: transparent; }
+}
+
+.highlight {
+    animation: highlight 2s ease;
+}
